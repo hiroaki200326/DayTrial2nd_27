@@ -200,3 +200,29 @@ section {
   transition: 0.3s ease-in-out;
   transform: translateX(-105%);
 }
+
+.gnav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.gnav-item {
+  border-bottom: 2px dotted #eeeeee;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+.gnav-item a {
+  color: #ffffff;
+  font-size: 12px;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+.gnav-item a::first-line {
+  font-size: 16px;
+  font-weight: bold;
+}
