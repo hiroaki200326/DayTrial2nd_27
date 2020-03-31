@@ -163,3 +163,40 @@ section {
 #gnav-open span::after {
   bottom: -16px;
 }
+
+#gnav-close {
+  display: none;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#gnav-input:checked ~ #gnav-close {
+  display: block;
+  opacity: 0.5;
+}
+
+#gnav-input:checked ~ #gnav-content {
+  transform: translateX(0%);
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+#gnav-content {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  width: 70%;
+  max-width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
+  transform: translateX(-105%);
+}
