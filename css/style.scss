@@ -125,3 +125,65 @@ $breakpoints: (
   }
 }
 
+//headerのスタイル
+.header{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255,255,255,0.9);
+  z-index: 200;
+}
+
+//サイトロゴとナビゲーションの並び
+.header-logo-menu{
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+}
+
+//サイトロゴの表示
+.logo-area{
+  width: 200px;
+  margin: 0;
+  text-align: left;
+}
+
+//ハンバーガーメニュー
+.gnav-toggle{
+  position: relative;
+  margin-top: 12px;
+}
+
+//ハンバーガーメニュー用チェックボックス非表示
+.gnav-hidden{
+  display: none;
+}
+
+//ハンバーガーメニューアイコン
+#gnav-open{
+  //アイコン用スペース
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle; //gnav-toggler内で縦方向に中央揃え
+
+  //アイコン
+  span, span::before, span::after{
+    content: '';
+    position: absolute;
+    height: 3px;  //線の太さ
+    width: 25px;  //線の長さ
+    border-radius: 3px;
+    background: #555555;  //線の色
+    display: block;
+    cursor: pointer;
+  }
+  span::before{
+    bottom: -8px;   //2本目の線の位置
+  }
+  span::after{
+    bottom: -16px;  //3本目の線の位置
+  }
+}
+
