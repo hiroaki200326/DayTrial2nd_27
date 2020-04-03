@@ -119,7 +119,7 @@ $breakpoints: (
   top: 0px;
   width: 100%;
   padding: 10px;
-  background: rgba(255,255,255,0.9);
+  background: #3F51B5;
   z-index: 200;
 }
 
@@ -163,7 +163,7 @@ $breakpoints: (
     height: 3px;  //線の太さ
     width: 25px;  //線の長さ
     border-radius: 3px;
-    background: #555555;  //線の色
+    background: #FFF;  //線の色
     display: block;
     cursor: pointer;
   }
@@ -239,7 +239,7 @@ $breakpoints: (
 
     &::first-line{
       font-size: 16px;
-      font-weight: bold;
+      // font-weight: bold;
     }
   }
 }
@@ -256,6 +256,7 @@ $breakpoints: (
     display: block;
   }
   .logo-area{
+    margin-left: 140px;
     width: 250px;
   }
   //ナビゲーションメニューの横並び化
@@ -270,8 +271,8 @@ $breakpoints: (
     margin: 0;
     padding-bottom: 0;
     a{
-      color: #333333;
       width: 120px;
+      font-weight: normal;
       &:hover{
         color: #85a7cc;
       }
