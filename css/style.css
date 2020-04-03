@@ -101,7 +101,7 @@ section {
   top: 0px;
   width: 100%;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.9);
+  background: #3F51B5;
   z-index: 200;
 }
 
@@ -139,7 +139,7 @@ section {
   height: 3px;
   width: 25px;
   border-radius: 3px;
-  background: #555555;
+  background: #FFF;
   display: block;
   cursor: pointer;
 }
@@ -212,7 +212,6 @@ section {
 
 .gnav-item a::first-line {
   font-size: 16px;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,6 +225,7 @@ section {
     display: block;
   }
   .logo-area {
+    margin-left: 140px;
     width: 250px;
   }
   .gnav-menu {
@@ -239,8 +239,8 @@ section {
     padding-bottom: 0;
   }
   .gnav-item a {
-    color: #333333;
     width: 120px;
+    font-weight: normal;
   }
   .gnav-item a:hover {
     color: #85a7cc;
