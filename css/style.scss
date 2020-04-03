@@ -113,18 +113,6 @@ $breakpoints: (
   display: none;
 }
 
-@include mq('pc') {
-  .inner{
-    max-width: $layout-width-pc-max;
-  }
-  .sp-only{
-    display: none;
-  }
-  .pc-only{
-    display: block;
-  }
-}
-
 //headerのスタイル
 .header{
   position: fixed;
@@ -255,3 +243,40 @@ $breakpoints: (
     }
   }
 }
+
+//PCレイアウト用設定
+@include mq('pc') {
+  .inner{
+    max-width: $layout-width-pc-max;
+  }
+  .sp-only{
+    display: none;
+  }
+  .pc-only{
+    display: block;
+  }
+  .logo-area{
+    width: 250px;
+  }
+  //ナビゲーションメニューの横並び化
+  .gnav-menu{
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 0;
+  }
+  //ナビゲーションメニューのアイテム設定
+  .gnav-item{
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+    a{
+      color: #333333;
+      width: 120px;
+      &:hover{
+        color: #85a7cc;
+      }
+    }
+  }
+
+}
+

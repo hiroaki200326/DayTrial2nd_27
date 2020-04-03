@@ -96,18 +96,6 @@ section {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .inner {
-    max-width: 1200px;
-  }
-  .sp-only {
-    display: none;
-  }
-  .pc-only {
-    display: block;
-  }
-}
-
 .header {
   position: fixed;
   top: 0px;
@@ -225,4 +213,36 @@ section {
 .gnav-item a::first-line {
   font-size: 16px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .inner {
+    max-width: 1200px;
+  }
+  .sp-only {
+    display: none;
+  }
+  .pc-only {
+    display: block;
+  }
+  .logo-area {
+    width: 250px;
+  }
+  .gnav-menu {
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 0;
+  }
+  .gnav-item {
+    border-bottom: none;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .gnav-item a {
+    color: #333333;
+    width: 120px;
+  }
+  .gnav-item a:hover {
+    color: #85a7cc;
+  }
 }
