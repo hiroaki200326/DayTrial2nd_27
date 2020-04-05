@@ -281,6 +281,10 @@ section {
   }
   .gnav-item a:hover {
     color: #85a7cc;
+    border-bottom-width: 2px;
+    border-color: #E81919;
+    border-bottom-style: solid;
+    border-radius: 2px;
   }
   .header-logo-menu {
     width: auto;
