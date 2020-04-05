@@ -74,7 +74,7 @@ section {
 .btn {
   display: block;
   padding: 20px 35px;
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 0 auto;
   border: none;
 }
@@ -91,6 +91,7 @@ section {
   background: #3F51B5;
   width: 390px;
   height: 83px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
 }
 
 .inner {
@@ -240,9 +241,14 @@ section {
   flex-direction: column;
 }
 
+.mv-area h1 {
+  margin-bottom: 12px;
+}
+
 .mv-area p {
   font-size: 38px;
   font-weight: bold;
+  margin-bottom: 82px;
 }
 
 .mv-title {
@@ -281,6 +287,10 @@ section {
   }
   .gnav-item a:hover {
     color: #85a7cc;
+    border-bottom-width: 2px;
+    border-color: #E81919;
+    border-bottom-style: solid;
+    border-radius: 2px;
   }
   .header-logo-menu {
     width: auto;
