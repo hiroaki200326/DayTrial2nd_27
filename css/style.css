@@ -19,7 +19,16 @@ h1, h2, h3 {
   list-style: 1.5;
   letter-spacing: 0.2em;
   text-align: center;
+}
+
+h1 {
   font-size: 68px;
+}
+
+h2 {
+  font-size: 60px;
+  letter-spacing: 0px;
+  margin-bottom: 44.43px;
 }
 
 h3 {
@@ -70,7 +79,7 @@ img {
 }
 
 section {
-  padding: 60px 0;
+  padding: 68px 0;
 }
 
 .txt-center {
@@ -275,9 +284,8 @@ section {
 }
 
 .card-item {
-  flex: 40%;
-  padding: 20px 20px 0;
-  margin: 5px;
+  padding: 16px 16px 0;
+  margin: 0 0 20px 0;
   border-radius: 4px;
   background-color: #fff;
 }
@@ -292,7 +300,7 @@ section {
 .line {
   width: 76px;
   border-bottom: 5px solid #3F51B5;
-  margin: 0 auto;
+  margin: 0 auto 68.57px;
 }
 
 @media screen and (min-width: 768px) {
@@ -334,5 +342,17 @@ section {
   }
   .header-logo-menu {
     width: auto;
+  }
+  .card-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  .card-item {
+    flex: 1;
+    flex-basis: 342px;
+    margin: 0 15px 20px 15px;
   }
 }
