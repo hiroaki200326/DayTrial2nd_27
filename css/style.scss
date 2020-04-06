@@ -27,10 +27,20 @@ h3{
   margin-bottom: 20px;
 }
 
+h4{
+  color: #6F7579;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
 p{
+  color: #6F7579;
   margin-top: 0;
   margin-bottom: 1.5em;
   text-align: justify;
+  letter-spacing: 0px;
+  font-weight: bold;
 }
 
 address{
@@ -282,6 +292,40 @@ $breakpoints: (
 
 .mv-title{
   color: #333333;
+}
+
+.card-area{
+  background-color: #EFEFEF;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  // max-width: 1200px;
+  // margin: 0 auto;
+}
+
+.card-item{
+  flex: 40%;
+  // text-align: center;
+  padding: 20px 20px 0;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+
+  .box{
+    width: 310px;
+    height: 161px;
+    background-color: #DDDDDD;
+    margin: 0 auto;
+  }
+}
+
+.line{
+  width: 76px;
+  border-bottom: 5px solid #3F51B5;
+  margin: 0 auto;
 }
 
 //PCレイアウト用設定
