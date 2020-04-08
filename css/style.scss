@@ -16,11 +16,13 @@ body{
 h1,h2,h3{
   margin-top: 0;
   list-style: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0;
   text-align: center;
 }
 
 h1{
+  margin-top: 180px;
+  margin-bottom: 0;
   font-size: 68px;
 }
 
@@ -77,7 +79,7 @@ img{
 }
 
 section{
-  padding: 68px 0;
+  padding: 61px 0 68px 0;
 }
 
 .txt-center{
@@ -108,6 +110,7 @@ section{
   width: 390px;
   height: 83px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  margin-top: 77px;
 }
 
 //ブレークポイント
@@ -149,7 +152,7 @@ $breakpoints: (
   position: fixed;
   top: 0px;
   width: 100%;
-  padding: 10px;
+  // padding: 10px;
   background: #3F51B5;
   z-index: 200;
   height: 100px;
@@ -163,6 +166,7 @@ $breakpoints: (
   font-display: row;
   justify-content: space-between;
   width: 100%;
+  padding-top: 5px;
 }
 
 //サイトロゴの表示
@@ -286,16 +290,17 @@ $breakpoints: (
   background-size: cover;
   background-position: center center;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   flex-direction: column;
-  h1{
-    margin-bottom: 12px;
-  }
+  // h1{
+  //   margin-bottom: 12px;
+  // }
   p{
     font-size: 38px;
     font-weight: bold;
-    margin-bottom: 82px;
+    margin-top: 2px;
+    margin-bottom: 0;
   }
 }
 
@@ -348,12 +353,11 @@ $breakpoints: (
   }
   .logo-area{
     margin-left: 140px;
-    width: 250px;
   }
   //ナビゲーションメニューの横並び化
   .gnav-menu{
     flex-direction: row;
-    padding-top: 15px;
+    padding-top: 9px;
     margin: 0;
     margin-left: 542px;
   }
@@ -395,5 +399,8 @@ $breakpoints: (
     margin: 0 15px 20px 15px;
   }
 
+  .mv-area{
+    height: 700px;
+  }
 }
 
