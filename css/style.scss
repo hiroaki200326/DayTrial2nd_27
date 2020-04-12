@@ -347,6 +347,9 @@ $breakpoints: (
 
 .news-area{
   background-color: #FFF;
+  .line{
+    margin: 0 auto 90.5px;
+  }
 }
 
 .news-content{
@@ -379,6 +382,7 @@ $breakpoints: (
   }
   &:last-child{
     border: none;
+    margin-bottom: 16px;
   }
 }
 
@@ -498,7 +502,7 @@ $breakpoints: (
   
   .news-item{
     // width: 100%;
-    // margin: 0 0 20px 0;
+    margin-bottom: 18.5px;
     // background-color: #fff;
     // display: flex;
     flex-direction: row;
@@ -515,11 +519,14 @@ $breakpoints: (
     button{
       order: 0;
       margin-right: 30px;
+      margin-bottom: 16.5px;
       // margin-bottom: 5px;
     }
     p{
       order: 1;
       max-width: 576px;
+      margin-top: 4px;
+      margin-bottom: 16.5px;
       // font-weight: normal;
       // margin-bottom: 10px;
     }
