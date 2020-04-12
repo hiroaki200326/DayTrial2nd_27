@@ -310,6 +310,10 @@ section {
   background-color: #FFF;
 }
 
+.news-area .line {
+  margin: 0 auto 90.5px;
+}
+
 .news-content {
   display: flex;
   flex-direction: column;
@@ -345,6 +349,7 @@ section {
 
 .news-item:last-child {
   border: none;
+  margin-bottom: 16px;
 }
 
 .btn_label1,
@@ -454,6 +459,7 @@ section {
     max-width: 838px;
   }
   .news-item {
+    margin-bottom: 18.5px;
     flex-direction: row;
   }
   .news-item time {
@@ -465,9 +471,12 @@ section {
   .news-item button {
     order: 0;
     margin-right: 30px;
+    margin-bottom: 16.5px;
   }
   .news-item p {
     order: 1;
     max-width: 576px;
+    margin-top: 4px;
+    margin-bottom: 16.5px;
   }
 }
