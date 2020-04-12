@@ -345,6 +345,88 @@ $breakpoints: (
   margin: 0 auto 65px;
 }
 
+.news-area{
+  background-color: #FFF;
+}
+
+.news-content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news-item{
+  width: 100%;
+  margin: 0 0 20px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  time{
+    order: 0;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+  button{
+    order: -1;
+    margin-bottom: 5px;
+  }
+  p{
+    order: 1;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  &:last-child{
+    border: none;
+  }
+}
+
+.btn_label1,
+.btn_label2,
+.btn_label3{
+  width: 100px;
+  height: 30px;
+  margin: 0;
+  padding: 4.5px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.btn_label1{
+  background-color: #666666;
+}
+.btn_label2{
+  background-color: #3F51B5;
+}
+.btn_label3{
+  background-color: #E81919;
+}
+.news-item-more{
+  text-align: center;
+  vertical-align: middle;
+  a{
+    position: relative;
+    color: #E81919;
+    font-size: 16px;
+    font-weight: bold;
+    &:after{
+      position: absolute;
+      content: "\f054";
+      font-family: 'Font Awesome 5 Free';
+      font-size: 16px;
+      top: 50%;
+      right: -10.5px;
+      -webkit-transform: translate(50%, -40%);
+      transform: translate(50%, -40%);
+    }
+  }
+}
+
+
+
+
 //PCレイアウト用設定
 @include mq('pc') {
   .inner{
@@ -406,6 +488,44 @@ $breakpoints: (
 
   .mv-area{
     height: 700px;
+  }
+
+  .news-content{
+    width: 100%;
+    max-width: 838px;
+    // margin: 0 auto;
+  }
+  
+  .news-item{
+    // width: 100%;
+    // margin: 0 0 20px 0;
+    // background-color: #fff;
+    // display: flex;
+    flex-direction: row;
+    // border-bottom: 1px solid #707070;
+    time{
+      order: -1;
+      min-width: 90px;
+      margin-top: 4px;
+      margin-right: 25px;
+      // padding: 4px 30px 21.5px 7.5px;
+      // margin-bottom: 5px;
+      // font-weight: normal;
+    }
+    button{
+      order: 0;
+      margin-right: 30px;
+      // margin-bottom: 5px;
+    }
+    p{
+      order: 1;
+      max-width: 576px;
+      // font-weight: normal;
+      // margin-bottom: 10px;
+    }
+    // &:last-child{
+    //   border: none;
+    // }
   }
 }
 
