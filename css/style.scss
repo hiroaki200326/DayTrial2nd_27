@@ -489,6 +489,20 @@ $breakpoints: (
   color: red;
 }
 
+.access-content{
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  margin: 0 auto;
+}
+
 
 //PCレイアウト用設定
 @include mq('pc') {
@@ -607,5 +621,11 @@ $breakpoints: (
     margin-right: 0;
     margin-left: 0;
   }
+  .access-content{
+    padding-top: 0;
+    width: 800px;
+    height: 400px;
+  }
+  
 }
 
