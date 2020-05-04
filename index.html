@@ -225,6 +225,59 @@
   </section>
   <!--access-->
 
+    <!--contact-->
+    <section id="Contact" class="contact-area">
+      <div class="inner">
+        <h2 class="h2-title">Contact</h2>
+        <div class="line"></div>
+      </div>
+      <div class="contact-content">
+       <form action="test.php" method="post">
+         <dl>
+           <div class="contact-item">
+             <dt>お名前</dt>
+             <dd><input class="form-text" type="text" name="userName" placeholder="山田太郎"></dd>
+           </div>
+           <div class="contact-item">
+             <dt>メールアドレス</dt>
+             <dd><input class="form-text" type="email" name="userEmail" placeholder="text@example.com"></dd>
+           </div>
+           <div class="contact-item">
+             <dt>お問い合わせ種別</dt>
+             <dd>
+               <select class="form-select" name="userInquiryType">
+                 <option value="default" selected>---</option>
+                 <option value="op1">option1</option>
+                 <option value="op2">option2</option>
+                 <option value="op3">option3</option>
+              </select>
+            </dd>
+           </div>
+           <div class="contact-item">
+             <dt>お問い合わせ内容</dt>
+             <dd><textarea class="form-textarea" name="unserInquiryContents" placeholder="お問い合わせを入力してください"></textarea></dd>
+           </div>
+           <div class="contact-item">
+             <dt></dt>
+             <dd>
+               <label><input class="form-radio" type="radio" name="userRadio" value="radio1" checked>ラジオ1</label>
+               <label><input class="form-radio" type="radio" name="userRadio" value="radio2">ラジオ2</label>
+               <label><input class="form-radio" type="radio" name="userRadio" value="radio3">ラジオ3</label>
+             </dd>
+           </div>
+           <div class="contact-item">
+             <dt></dt>
+             <dd><label><input class="form-check" type="checkbox" name="userCheck" value="check1" checked><a href="#">プライバシーポリシー</a>に合意する</label></dd>
+           </div>
+          </dl>
+          <div class="contact-submit">
+            <input class="form-submit" type="submit" value="送信する">
+          </div>
+       </form> 
+      </div>
+    </section>
+    <!--contact-->
+
 
 </body>
 </html>
