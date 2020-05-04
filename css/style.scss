@@ -489,6 +489,28 @@ $breakpoints: (
   color: red;
 }
 
+.access-area{
+  .line{
+    margin-bottom: 105px;
+  }
+  .btn-inquiry{
+    margin-top: 37.85px;
+    font-size: 20px;
+    width: 305px;
+    height: 56px;
+    padding: 16px 0 14px 59px;
+    text-align: left;
+    &:after{
+      position: relative;
+      content: "\f054";
+      font-family: 'Font Awesome 5 Free';
+      font-size: 20px;
+      color: #fff;
+      right: -32px;
+    }
+  }
+}
+
 .access-content{
   position: relative;
   width: 100%;
@@ -500,7 +522,26 @@ $breakpoints: (
     width: 100%;
     height: 100%;
   }
+  margin: 0 auto 42px;
+}
+
+.access-text{
   margin: 0 auto;
+  width: 100%;
+  padding-left: 40px;
+  p{
+    font-weight: normal;
+    margin-bottom: 15px;
+  }
+  p:nth-of-type(odd)
+  {
+    width: 5em;
+    margin-right: 38px;
+  }
+  li{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 
@@ -626,6 +667,8 @@ $breakpoints: (
     width: 800px;
     height: 400px;
   }
-  
+  .access-text{
+    width: 800px;
+  }
 }
 
