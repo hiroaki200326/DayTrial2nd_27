@@ -554,7 +554,7 @@ $breakpoints: (
   appearance: none;
   background-color: transparent;
   background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #3F51B5;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -573,7 +573,7 @@ $breakpoints: (
   appearance: none;
   background-color: transparent;
   background-image: none;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #3F51B5;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -683,7 +683,7 @@ $breakpoints: (
   -webkit-appearance: none;
   appearance: none;
   background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #3F51B5;
   border-radius: 0;
   color: inherit;
   cursor: pointer;
@@ -702,7 +702,7 @@ $breakpoints: (
 }
 .form-submit {
   -webkit-appearance: none;
-  // background-color: rgba(0, 0, 0, 0.32);
+  background-color: #3F51B5;
   background-image: none;
   border: none;
   border-radius: 12px;
@@ -710,12 +710,12 @@ $breakpoints: (
   cursor: pointer;
   display: inline-block;
   font-size: 22px;
-  margin: 0 0 1em;
+  font-weight: bold;
+  margin: 0;
   padding: 0.6em 2em;
   text-decoration: none;
   width: 261px;
   height: 56px;
- 
 }
 .form-submit:hover,
 .form-submit:focus {
@@ -728,14 +728,6 @@ $breakpoints: (
 
 .contact-area{
   background-color: #EFEFEF;
-  .btn-inquiry:after{
-    position: relative;
-    content: "\f054";
-    font-family: 'Font Awesome 5 Free';
-    font-size: 20px;
-    color: #fff;
-    right: -32px;
-  }
 }
 form{
   width: 90%;
@@ -768,13 +760,35 @@ form{
 }
 .contact-item{
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 49px;
   a{
     text-decoration: underline #333333;
   }
 }
 .contact-submit{
   text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+.contact-submit-wrap{
+  width: 261px;
+  margin: 0 auto;
+  position: relative;
+  &::after{
+    content: '';
+    width: .6em;
+    height: .6em;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18.5px;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
 }
 .form-mandatory{
   display: inline-block;
@@ -925,6 +939,47 @@ form{
   }
   .access-text{
     width: 800px;
+  }
+
+  .contact-item{
+    display: flex;
+    justify-content: center;
+  }
+  .form-mandatory{
+    width: 177px;
+    &::after{
+      right: auto;
+      left: 0 ;
+      top: 55px;
+    }
+  }
+  form{
+    dl{
+      width: 705px;
+    }
+    dt{
+      width: 177px;
+      padding-top: 18px;
+    }
+    dd{
+      width: 528px;
+    }
+    // .align-left{
+    //   left: 0;
+    //   position: relative;
+    // }
+    .width-0{
+      width: 0  ;
+    }
+    .justify-content-left{
+      justify-content: left;
+    }
+    .margin-bottom-0{
+      margin-bottom: 0;
+    }
+    .txt-center-block{
+      margin-bottom: 29.65px;
+    }
   }
 }
 
