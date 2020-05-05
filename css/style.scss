@@ -1,5 +1,7 @@
 /*全体スタイル*/
-*{
+*,
+*:before,
+*:after{
   box-sizing: border-box;
 }
 
@@ -544,6 +546,7 @@ $breakpoints: (
   }
 }
 
+/* contact */
 //フォームレイアウトリセット
 .form-text {
   -moz-appearance: none;
@@ -575,9 +578,10 @@ $breakpoints: (
   color: inherit;
   font-family: inherit;
   font-size: 1em;
-  height: 100px;
+  height: 240px;
   padding: 0.4em 0.8em;
   width: 100%;
+  margin-bottom: 40.62px;
 }
 .form-textarea:focus {
   border: 1px solid rgba(0, 0, 0, 0.32);
@@ -590,45 +594,48 @@ $breakpoints: (
 .form-radio + span {
   cursor: pointer;
   display: inline-block;
-  margin: 0 0.2em 0;
-  padding: 0 0 0 1.2em;
+  margin: 0 30px 0 0.2em;
+  padding: 0 0 0 39px;
   position: relative;
 }
 .form-radio + span::before {
   -webkit-transform: translateY(-50%);
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #707070;
   border-radius: 50%;
   content: "";
   display: block;
-  height: 16px;
+  height: 30px;
   left: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
+  width: 30px;
+  // box-sizing: border-box;
 }
 .form-radio + span::after {
   -webkit-transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.32);
+  background: #3F51B5;
   border: 1px solid transparent;
   border-radius: 50%;
   content: "";
-  height: 8px;
-  left: 4px;
+  height: 18px;
+  left: 6px;
   opacity: 0;
   padding: 2px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s ease 0s;
-  width: 8px;
+  width: 18px;
 }
 .form-radio:checked + span::after {
   opacity: 1;
 }
 .form-check {
   display: none;
+  margin: 0 auto;
+
 }
 .form-check + span {
   cursor: pointer;
@@ -640,32 +647,33 @@ $breakpoints: (
 .form-check + span::before {
   -webkit-transform: translateY(-50%);
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.16);
+  border: 1px solid #707070;
   border-radius: 2px;
   content: "";
   display: block;
-  height: 1em;
-  left: 0;
+  height: 30px;
+  left: -30px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 1em;
+  width: 30px;
 }
 .form-check + span::after {
   -webkit-transform: translateY(-50%) rotate(-45deg);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.32);
-  border-left: 3px solid rgba(0, 0, 0, 0.32);
+  border-bottom: 3px solid #3F51B5;
+  border-left: 3px solid #3F51B5;
   content: "";
   display: block;
-  height: 0.6em;
-  left: 0;
+  height: 14px;
+  left: -25px;
   margin-top: -0.2em;
   opacity: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
   transition: all 0.3s ease 0s;
-  width: 1em;
+  width: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
 }
 .form-check:checked + span::after {
   opacity: 1;
@@ -694,17 +702,20 @@ $breakpoints: (
 }
 .form-submit {
   -webkit-appearance: none;
-  background-color: rgba(0, 0, 0, 0.32);
+  // background-color: rgba(0, 0, 0, 0.32);
   background-image: none;
   border: none;
-  border-radius: 0;
+  border-radius: 12px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
+  font-size: 22px;
   margin: 0 0 1em;
   padding: 0.6em 2em;
   text-decoration: none;
+  width: 261px;
+  height: 56px;
+ 
 }
 .form-submit:hover,
 .form-submit:focus {
@@ -713,6 +724,81 @@ $breakpoints: (
 .form-submit::-moz-foucus-inner {
   border: none;
   padding: 0;
+}
+
+.contact-area{
+  background-color: #EFEFEF;
+  .btn-inquiry:after{
+    position: relative;
+    content: "\f054";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 20px;
+    color: #fff;
+    right: -32px;
+  }
+}
+form{
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 20px 0;
+  dl{
+    margin: 0 auto;
+    width: 90%;
+  }
+  dt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  dd{
+    margin-left: 0;
+  }
+  dt,dd{
+    width: 100%;
+  }
+  input[type="text"], input[type="email"], select, textarea{
+    display: block;
+    width: 100%;
+  }
+  input[type="text"], input[type="email"], select{
+    height: 60px;
+  }
+}
+.contact-item{
+  display: block;
+  margin-bottom: 40px;
+  a{
+    text-decoration: underline #333333;
+  }
+}
+.contact-submit{
+  text-align: center;
+}
+.form-mandatory{
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+.form-mandatory::after{
+  content: "必須";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #E81919;
+  border-radius: 12px;
+  text-align: center;
+  width: 45.98px;
+  line-height: 22.72px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+.txt-center-block{
+  display: block;
+  text-align: center;
 }
 
 //PCレイアウト用設定
