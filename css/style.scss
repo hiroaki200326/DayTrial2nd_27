@@ -9,10 +9,11 @@
 body{
   font-size: 16px;
   line-height: 1.5;
-  font-family: Yu Gothic, sans-serif;
+  font-family: "Yu Gothic", sans-serif;
   font-weight: 400;
   color: #333;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 h1,h2,h3{
@@ -287,11 +288,12 @@ $breakpoints: (
 }
 
 .mv-area{
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/mainvisual.png");
-  background-size: cover;
-  background-position: center center;
+  // background-image: url("../img/mainvisual.png");
+  // background-size: cover;
+  // background-position: center center;
   display: flex;
   // justify-content: center;
   align-items: center;
@@ -815,6 +817,44 @@ form{
   text-align: center;
 }
 
+.mv-text{
+  position: absolute;
+  z-index: 2  ;
+  text-align: center;
+}
+#mv{
+  padding-bottom: 0;  
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+.swiper-button-prev, .swiper-button-next{
+  z-index: 10000;
+  width: 75px;
+  height: 75px;
+}
+.swiper-button-prev{
+  top: 38%;
+  left: 11%;
+}
+.swiper-button-next{
+  top: 38%;
+  right: 11%;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+  content: "";
+}
+.swiper-pagination-bullet{
+  width: 16px;
+  height: 16px;
+  background: #2F7DC8;
+}
+
+
 //PCレイアウト用設定
 @include mq('pc') {
   .inner{
@@ -984,39 +1024,4 @@ form{
 }
 
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  z-index: 1;
-}
 
-.swiper-button-prev,
-.swiper-button-next {
-  fill: #fff;
-  stroke: none;
-  stroke-width: 0;
-  z-index: 10000;
-  width: 20px;
-  margin-top: -18px;
-  background-image: none;
-}
-
-.swiper-pagination-bullet-active {
-  background: #fff;
-}
-
-@media (min-width: 768px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 27px;
-    margin-top: -22px;
-  }
-}
-
-/**
- * mainvisual
- */
-.mainvisual {
-  overflow-x: hidden;
-}
