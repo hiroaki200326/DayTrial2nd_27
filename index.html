@@ -8,6 +8,7 @@
   <meta name="description" content="レスポンシブ対応、ナビゲーション付きサンプルサイト">
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
@@ -122,32 +123,32 @@
       <p class="txt-center"></p>
     </div>
     <ul class="card-content">
-      <li class="card-item">
+      <li class="card-item wow slideOutLeft" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="3">
         <div class="box"></div>
         <h4>タイトルタイトル</h4>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </li>
-      <li class="card-item">
+      <li class="card-item wow hinge" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="3">
         <div class="box"></div>
         <h4>タイトルタイトル</h4>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </li>
-      <li class="card-item">
+      <li class="card-item wow wobble" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="3">
         <div class="box"></div>
         <h4>タイトルタイトル</h4>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </li>
-      <li class="card-item">
+      <li class="card-item wow rotateInDownRight" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="3">
         <div class="box"></div>
         <h4>タイトルタイトル</h4>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </li>
-      <li class="card-item">
+      <li class="card-item wow lightSpeedIn" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="3">
         <div class="box"></div>
         <h4>タイトルタイトル</h4>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </li>
-      <li class="card-item">
+      <li class="card-item wow flipInX" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="10" data-wow-iteration="3">
         <div class="box"></div>
         <h4>タイトルタイトル</h4>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -348,6 +349,11 @@
         prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
       },
     });
+  </script>
+
+  <script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
   </script>
 </body>
 </html>
