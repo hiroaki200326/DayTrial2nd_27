@@ -154,6 +154,7 @@ section {
 .logo-area {
   width: 200px;
   margin: 0;
+  margin-left: 16px;
   text-align: left;
 }
 
@@ -875,6 +876,47 @@ form input[type="text"], form input[type="email"], form select {
   width: 16px;
   height: 16px;
   background: #2F7DC8;
+}
+
+.drawer-nav {
+  width: 200px;
+}
+
+.drawer-menu-item {
+  height: 50px;
+  padding-left: 20px;
+  border-bottom: 1px dashed #707070;
+  position: relative;
+}
+
+.drawer-menu-item:after {
+  position: absolute;
+  content: "\f054";
+  font-family: 'Font Awesome 5 Free';
+  font-size: 16px;
+  color: #333333;
+  font-weight: 900;
+  top: 50%;
+  right: 21.5px;
+  transform: translateY(-50%);
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 205px;
+}
+
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+  background-color: #fff;
+  height: 4px;
+}
+
+.drawer-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.drawer-hamburger {
+  top: auto;
+  margin-right: 18.69px;
 }
 
 @media screen and (min-width: 768px) {
