@@ -9,14 +9,36 @@
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
-<body>
+<body class="drawer drawer--right">
   <!--header-->
-  <header class="header">
-    <div class="header-logo-menu">
+  <!-- <header class="header"> -->
+  <header class="header" role="banner">
+    <div class="logo-area">
+      <img src="./img/logo.png" alt="ロゴ">
+    </div>
+    <!-- ハンバーガーボタン -->
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <!-- ナビゲーションの中身 -->
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#"></a></li>
+        <li><a class="drawer-menu-item" href="#Card">Card</a></li>
+        <li><a class="drawer-menu-item" href="#News">News</a></li>
+        <li><a class="drawer-menu-item" href="#Price">Price</a></li>
+        <li><a class="drawer-menu-item" href="#Access">Access</a></li>
+        <li><a class="drawer-menu-item" href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- <div class="header-logo-menu">
       <div class="logo-area">
         <img src="./img/logo.png" alt="ロゴ">
       </div>
@@ -65,7 +87,7 @@
           </li>
         </ul>
       </nav>
-    </div>
+    </div> -->
   </header>
   <!--header-->
 
@@ -354,6 +376,18 @@
   <script src="./js/wow.min.js"></script>
   <script>
     new WOW().init();
+  </script>
+
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+  <!-- ドロワーメニューの利用宣言 -->
+  <script>
+    $(document).ready(function() {
+    $('.drawer').drawer();
+  });
   </script>
 </body>
 </html>
