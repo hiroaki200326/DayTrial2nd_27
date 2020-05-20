@@ -350,6 +350,12 @@
     </div>
   </section>
   <!--contact-->
+
+  <!--ScrollToTop icon-->
+  <div class="floating">
+    <a href="#" class="btn">page top</a>
+  </div>
+  <!--ScrollToTop icon-->
   
   <script src="./js/swiper.min.js"></script>
   <script>
@@ -393,11 +399,37 @@
   <!-- drawer.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <!-- ドロワーメニューの利用宣言 -->
   <script>
     $(document).ready(function() {
     $('.drawer').drawer();
   });
   </script>
+
+  <!--ScrollToTop-->
+  <script>
+    // jQuery(window).on("scroll", function($) {
+    jQuery(window).on("scroll", function() {
+    if (jQuery(this).scrollTop() > 100) {
+      // jQuery('.floating').show();
+      jQuery('.floating').fadeIn();
+      console.log(jQuery(this).scrollTop());
+    } else {
+      // jQuery('.floating').hide();
+      jQuery('.floating').fadeOut();
+    }
+  });
+  
+  jQuery('.floating').click(function () {
+    jQuery('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+  </script>
+
+  <!--スムーススクロール-->
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

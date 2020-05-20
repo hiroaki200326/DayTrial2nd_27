@@ -919,6 +919,26 @@ form input[type="text"], form input[type="email"], form select {
   margin-right: 18.69px;
 }
 
+.floating {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  display: none;
+}
+
+.floating a {
+  display: block;
+  color: #fff;
+  background: #000;
+  padding: 8px;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.floating a:hover {
+  opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
   .inner {
     max-width: 1200px;
