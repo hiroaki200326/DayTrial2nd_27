@@ -407,28 +407,6 @@
   });
   </script>
 
-  <!--ScrollToTop-->
-  <script>
-    // jQuery(window).on("scroll", function($) {
-    jQuery(window).on("scroll", function() {
-    if (jQuery(this).scrollTop() > 100) {
-      // jQuery('.floating').show();
-      jQuery('.floating').fadeIn();
-      console.log(jQuery(this).scrollTop());
-    } else {
-      // jQuery('.floating').hide();
-      jQuery('.floating').fadeOut();
-    }
-  });
-  
-  jQuery('.floating').click(function () {
-    jQuery('body,html').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
-  </script>
-
   <!--スムーススクロール-->
   <script type="text/javascript" src="./js/script.js"></script>
 </body>
