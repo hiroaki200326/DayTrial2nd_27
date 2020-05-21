@@ -1,10 +1,22 @@
 $(function(){
   var scrollTime_ms = 1000;
 
-  //グローバルメニューのスクロール
+  //グローバルメニュー(スマホ用)のスクロール
   jQuery('.drawer-menu-item').click(function(){
     var id = $(this).attr('href');
     pageScroll(id, scrollTime_ms);
+  });
+
+  //グローバルメニュー(PC用)のスクロール
+  //クリックされたグローバルメニューへの下線追加
+  jQuery('.gnav-item a').click(function(){
+    //ページスクロール
+    var id = $(this).attr('href');
+    pageScroll(id, scrollTime_ms);
+
+    //下線追加
+    jQuery('.gnav-item a').removeClass('active-border-bottom');
+    jQuery(this).addClass('active-border-bottom');
   });
 
   //お問い合わせボタンのスクロール

@@ -18,34 +18,56 @@
   <!--header-->
   <!-- <header class="header"> -->
   <header class="header" role="banner">
-    <div class="logo-area">
-      <img src="./img/logo.png" alt="ロゴ">
+    <div class="header-logo-menu">
+      <div class="logo-area">
+        <img src="./img/logo.png" alt="ロゴ">
+      </div>
+      <!-- ハンバーガーボタン -->
+      <button type="button" class="drawer-toggle drawer-hamburger sp-only">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <!-- ナビゲーションの中身 -->
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#"></a></li>
+          <li><a class="drawer-menu-item" href="#Card">Card</a></li>
+          <li><a class="drawer-menu-item" href="#News">News</a></li>
+          <li><a class="drawer-menu-item" href="#Price">Price</a></li>
+          <li><a class="drawer-menu-item" href="#Access">Access</a></li>
+          <li><a class="drawer-menu-item" href="#Contact">Contact</a></li>
+          <!-- ドロップダウンの中身 -->
+          <li class="drawer-dropdown">
+            <a class="drawer-menu-item" href="#" data-toggle="dropdown">Nav2<span class="drawer-caret"></span></a>
+            <ul class="drawer-dropdown-menu">
+              <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav1</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav2</a></li>
+              <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="pc-only">
+        <ul class="gnav-menu">
+          <li class="gnav-item">
+            <a href="#Card">Card</a>
+          </li>
+          <li class="gnav-item">
+            <a href="#News">News</a>
+          </li>
+          <li class="gnav-item">
+            <a href="#Price">Price</a>
+          </li>
+          <li class="gnav-item">
+            <a href="#Access">Access</a>
+          </li>
+          <li class="gnav-item">
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- ハンバーガーボタン -->
-    <button type="button" class="drawer-toggle drawer-hamburger">
-      <span class="sr-only">toggle navigation</span>
-      <span class="drawer-hamburger-icon"></span>
-    </button>
-    <!-- ナビゲーションの中身 -->
-    <nav class="drawer-nav" role="navigation">
-      <ul class="drawer-menu">
-        <li><a class="drawer-brand" href="#"></a></li>
-        <li><a class="drawer-menu-item" href="#Card">Card</a></li>
-        <li><a class="drawer-menu-item" href="#News">News</a></li>
-        <li><a class="drawer-menu-item" href="#Price">Price</a></li>
-        <li><a class="drawer-menu-item" href="#Access">Access</a></li>
-        <li><a class="drawer-menu-item" href="#Contact">Contact</a></li>
-        <!-- ドロップダウンの中身 -->
-        <li class="drawer-dropdown">
-          <a class="drawer-menu-item" href="#" data-toggle="dropdown">Nav2<span class="drawer-caret"></span></a>
-          <ul class="drawer-dropdown-menu">
-            <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav1</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav2</a></li>
-            <li><a class="drawer-dropdown-menu-item" href="#">Dropdown nav3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+
 
     <!-- <div class="header-logo-menu">
       <div class="logo-area">

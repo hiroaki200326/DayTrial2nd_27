@@ -956,7 +956,6 @@ form input[type="text"], form input[type="email"], form select {
     flex-direction: row;
     padding-top: 9px;
     margin: 0;
-    margin-left: 542px;
   }
   .gnav-item {
     border-bottom: none;
@@ -974,9 +973,6 @@ form input[type="text"], form input[type="email"], form select {
     border-color: #E81919;
     border-bottom-style: solid;
     border-radius: 2px;
-  }
-  .header-logo-menu {
-    width: auto;
   }
   .card-content {
     flex-wrap: wrap;
@@ -1072,5 +1068,11 @@ form input[type="text"], form input[type="email"], form select {
   }
   form .txt-center-block {
     margin-bottom: 29.65px;
+  }
+  .active-border-bottom {
+    border-bottom-width: 2px;
+    border-color: #E81919;
+    border-bottom-style: solid;
+    border-radius: 2px;
   }
 }
