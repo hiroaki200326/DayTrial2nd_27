@@ -927,7 +927,7 @@ form{
     flex-direction: row;
     padding-top: 9px;
     margin: 0;
-    margin-left: 542px;
+    // margin-left: 542px;
   }
   //ナビゲーションメニューのアイテム設定
   .gnav-item{
@@ -949,9 +949,9 @@ form{
       }
     }
   }
-  .header-logo-menu{
-    width: auto;
-  }
+  // .header-logo-menu{
+  //   width: auto;
+  // }
 
   .card-content{
     flex-wrap: wrap;
@@ -1073,6 +1073,14 @@ form{
     .txt-center-block{
       margin-bottom: 29.65px;
     }
+  }
+
+  //グローバルメニュークリック時の下線
+  .active-border-bottom{
+    border-bottom-width: 2px;
+    border-color: #E81919;
+    border-bottom-style: solid;
+    border-radius: 2px;
   }
 }
 
