@@ -49,4 +49,60 @@ $(function(){
     $('html,body').animate({'scrollTop': position}, time_ms);
   }
   
+
+  //QAアコーディオン
+  // jQuery('.qa-item-list').click(function () {
+  //   var $answer = $(this).find('.answer');
+
+  //   //Open判定用クラス「open」の有無確認
+  //   if($answer.hasClass('open')){
+  //     //openあり = 回答欄が開いている
+  //     //open削除
+  //     $answer.removeClass('open');
+
+  //     //回答欄を閉じる
+  //     $answer.slideUp();
+
+  //     //テキストを+に変更
+  //     $(this).find('span').text("+");
+  //   } 
+  //   else{
+  //     //openなし = 回答欄が閉じている
+  //     //open追加
+  //     $answer.addClass('open');
+  
+  //     //回答欄を開く
+  //     $answer.slideDown();
+  //     //テキストを-に変更
+  //     $(this).find('span').text("-");
+  //   }
+  // });
+  jQuery('.qa-item-list').click(function () {
+    $(this).find('.answer').slideToggle();
+
+    // //Open判定用クラス「open」の有無確認
+    // if($answer.hasClass('open')){
+    //   //openあり = 回答欄が開いている
+    //   //open削除
+    //   $answer.removeClass('open');
+
+    //   //回答欄を閉じる
+    //   $answer.slideUp();
+
+    //   //テキストを+に変更
+    //   $(this).find('span').text("+");
+    // } 
+    // else{
+    //   //openなし = 回答欄が閉じている
+    //   //open追加
+    //   $answer.addClass('open');
+  
+    //   //回答欄を開く
+    //   $answer.slideDown();
+    //   //テキストを-に変更
+    //   $(this).find('span').text("-");
+    // }
+  });
+
+
 });

@@ -1075,4 +1075,71 @@ form input[type="text"], form input[type="email"], form select {
     border-bottom-style: solid;
     border-radius: 2px;
   }
+  .qa-area {
+    background: #dcf3f1;
+  }
+  .qa-content {
+    max-width: 904px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .question {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: #3F51B5;
+    padding-left: 55px;
+  }
+  .question h3 {
+    text-align: left;
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .question h3:before {
+    content: "Q";
+    left: -28px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+  }
+  .question span {
+    position: absolute;
+    right: 18.5px;
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 900;
+  }
+  .answer {
+    position: relative;
+    display: none;
+    width: 100%;
+    background: #fff;
+    padding: 24px 27px 18px 55px;
+    border: 1px solid #3F51B5;
+  }
+  .answer p {
+    margin: 0;
+    color: #3F51B5;
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+  }
+  .answer p:before {
+    content: "A";
+    left: -28px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+  }
+  .qa-item-list {
+    margin-bottom: 28px;
+  }
 }
