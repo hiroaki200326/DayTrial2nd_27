@@ -1215,4 +1215,7 @@ form input[type="text"], form input[type="email"], form select {
     right: 0;
     transform: translate(50%, -50%);
   }
+  .privacyPolicy-modal img:hover {
+    opacity: 0.8;
+  }
 }
