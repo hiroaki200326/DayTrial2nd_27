@@ -96,7 +96,8 @@ $(function(){
     jQuery('.privacyPolicy-area').fadeOut();
   });
   
-  jQuery('.contact-area a').click(function(){
+  jQuery('.contact-area a').click(function(e){
+    e.preventDefault();
     jQuery('.privacyPolicy-area').fadeIn();
   });
 
