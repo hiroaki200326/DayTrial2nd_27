@@ -88,7 +88,16 @@ $(function(){
     //   //テキストを-に変更
     //   $(this).find('span').text("-");
     // }
+    
   });
 
+  // モーダル
+  jQuery('.privacyPolicy-area button,.privacyPolicy-area img').click(function(){
+    jQuery('.privacyPolicy-area').fadeOut();
+  });
+  
+  jQuery('.contact-area a').click(function(){
+    jQuery('.privacyPolicy-area').fadeIn();
+  });
 
 });
