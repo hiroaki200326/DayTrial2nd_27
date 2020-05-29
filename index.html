@@ -12,6 +12,7 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body class="drawer drawer--right">
@@ -23,10 +24,14 @@
         <img src="./img/logo.png" alt="ロゴ">
       </div>
       <!-- ハンバーガーボタン -->
-      <button type="button" class="drawer-toggle drawer-hamburger sp-only">
+      <div class="drawer-toggle drawer-hamburger sp-only">
         <span class="sr-only">toggle navigation</span>
         <span class="drawer-hamburger-icon"></span>
-      </button>
+      </div>
+      <!-- <button type="button" class="drawer-toggle drawer-hamburger sp-only">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button> -->
       <!-- ナビゲーションの中身 -->
       <nav class="drawer-nav" role="navigation">
         <ul class="drawer-menu">
@@ -72,9 +77,10 @@
   <!--mv-->
   <section id="mv" class="mv-area">
     <div class="mv-text">
-      <h1 class="mv-title">詩が生れて、画が出来る。 とかくに人の世は住みにくい。</h1>
-      <p class="mv-title">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+      <h1 class="mv-title">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h1>
+      <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
       <button type="button" onclick="location.href='#'" class="btn btn-inquiry">お問い合わせしてみる</button>
+      <!-- <button type="button" onclick="location.href='#'" class="btn">お問い合わせしてみる</button> -->
     </div>
   </section>
   <!--mv-->
@@ -83,26 +89,26 @@
   <section id="News" class="news-area">
     <div class="inner">
       <h2 class="h2-title">News</h2>
-    </div>
-    <ul class="news-content">
-      <li class="news-item">
-        <time>2019-02-01</time>
-        <button type="button" onclick="location.href='#'" class="btn btn_label1">テキスト</button>
-        <p><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></p>
-      </li>
-      <li class="news-item">
-        <time>2019-02-01</time>
-        <button type="button" onclick="location.href='#'" class="btn btn_label1">テキスト</button>
-        <p><a href="#">ニュースニュースニュースニュースニュースニュースニュース</a></p>
-      </li>
-      <li class="news-item">
-        <time>2019-02-01</time>
-        <button type="button" onclick="location.href='#'" class="btn btn_label1">テキスト</button>
-        <p><a href="#">ニュースニュースニュースニュースニュースニュースニュース</a></p>
-      </li>
-    </ul>
-    <div class="inner news-item-more">
-      <a href="#">MORE</a>
+      <ul class="news-content">
+        <li class="news-item">
+          <time>2019-02-01</time>
+          <button type="button" onclick="location.href='#'" class="btn btn_label1">テキスト</button>
+          <p><a href="#">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></p>
+        </li>
+        <li class="news-item">
+          <time>2019-02-01</time>
+          <button type="button" onclick="location.href='#'" class="btn btn_label1">テキスト</button>
+          <p><a href="#">ニュースニュースニュースニュースニュースニュースニュース</a></p>
+        </li>
+        <li class="news-item">
+          <time>2019-02-01</time>
+          <button type="button" onclick="location.href='#'" class="btn btn_label1">テキスト</button>
+          <p><a href="#">ニュースニュースニュースニュースニュースニュースニュース</a></p>
+        </li>
+      </ul>
+      <div class="inner news-item-more">
+        <a href="#">MORE</a>
+      </div>
     </div>
   </section>
   <!--news-->
