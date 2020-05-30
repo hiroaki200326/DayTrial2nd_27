@@ -339,6 +339,54 @@ img {
 
 .results-area {
   background: #3E3E3E;
+  padding-bottom: 40px;
+}
+
+.results-area .h2-title {
+  color: #fff;
+}
+
+.swiper-container {
+  padding-left: 16px;
+}
+
+.swiper-wrapper {
+  width: 100vw;
+  height: 251px;
+  top: 0;
+  left: 0;
+}
+
+.swiper-slide {
+  background-color: #fff;
+}
+
+.swiper-slide h3 {
+  text-align: left;
+  font: Bold 15px/13px Yu Gothic;
+  letter-spacing: 0.01px;
+  margin-bottom: 0;
+}
+
+.swiper-slide p {
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-align: left;
+  font: normal 12px/20px Yu Gothic;
+  letter-spacing: 0.01px;
+}
+
+.swiper-slide .swiper-slide-text {
+  width: 100%;
+  padding: 12px;
+  padding-right: 13px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  position: relative;
+  bottom: 0;
+  top: 24px;
+  height: 56px;
 }
 
 .line {
@@ -452,6 +500,20 @@ img {
   color: #3E3E3E;
   border-radius: 0;
   background-color: #ffffff;
+  padding: 0;
+  padding-left: 4px;
+}
+
+.btn_black {
+  max-width: 343px;
+  width: 100%;
+  height: 54px;
+  border: 1px solid #fff;
+  font: 600 18px/23px Montserrat;
+  letter-spacing: 3.6px;
+  color: #fff;
+  border-radius: 0;
+  background-color: #3E3E3E;
   padding: 0;
   padding-left: 4px;
 }
@@ -947,10 +1009,18 @@ form input[type="text"], form input[type="email"], form select {
   content: "";
 }
 
-.swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
-  background: #2F7DC8;
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #3E3E3E;
+  opacity: 1;
+  margin: 0 13px;
+}
+
+.path {
+  display: none;
+}
+
+.swiper-pagination-bullet-active .path {
+  display: block;
 }
 
 .drawer-nav {

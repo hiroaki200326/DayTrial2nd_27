@@ -143,52 +143,57 @@
   <section id="Results" class="results-area">
     <div class="inner">
       <h2 class="h2-title">Results</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./img/results.jpg" alt="results">
-            <h4>とかくに人の世は住みにくい。</h4>
-            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/results.jpg" alt="results">
-            <h4>とかくに人の世は住みにくい。</h4>
-            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/results.jpg" alt="results">
-            <h4>とかくに人の世は住みにくい。</h4>
-            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/results.jpg" alt="results">
-            <h4>とかくに人の世は住みにくい。</h4>
-            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/results.jpg" alt="results">
-            <h4>とかくに人の世は住みにくい。</h4>
-            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/results.jpg" alt="results">
-            <h4>とかくに人の世は住みにくい。</h4>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/results.jpg" alt="results">
+          <div class="swiper-slide-text">
+            <h3>とかくに人の世は住みにくい。</h3>
             <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
           </div>
         </div>
+        <div class="swiper-slide">
+          <img src="./img/results.jpg" alt="results">
+          <div class="swiper-slide-text">
+            <h3>とかくに人の世は住みにくい。</h3>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/results.jpg" alt="results">
+          <div class="swiper-slide-text">
+            <h3>とかくに人の世は住みにくい。</h3>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/results.jpg" alt="results">
+          <div class="swiper-slide-text">
+            <h3>とかくに人の世は住みにくい。</h3>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/results.jpg" alt="results">
+          <div class="swiper-slide-text">
+            <h3>とかくに人の世は住みにくい。</h3>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/results.jpg" alt="results">
+          <div class="swiper-slide-text">
+            <h3>とかくに人の世は住みにくい。</h3>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>  
+          </div>
+        </div>
+      </div>
 
-        <div class="swiper-pagination"></div>
-          
-        <!-- <div class="swiper-button-prev">
-          <img src="./img/arrow-prev.png" alt="">
-        </div>
-        <div class="swiper-button-next">
-          <img src="./img/arrow-next.png" alt="">
-        </div> -->
-      </div>
-      <div class="inner results-item-more">
-        <a href="#">VIEW ALL</a>
-      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="inner results-item-more">
+      <button type="button" onclick="location.href='#'" class="btn btn_black">VIEW ALL</button>
     </div>
   </section>
   <!--Results-->
@@ -453,22 +458,28 @@
     // swiper.js の初期化処理
     var swiper = new Swiper('.swiper-container', {
       loop: true,
-      spaceBetween: 2,
+      spaceBetween: 24.5,
       speed: 1000,
-      slidesPerView:1,  // 1画面のスライド表示枚数
-      centeredSlides : true,  // アクティブなスライドの中央表示
-      effect: 'coverflow',    // スライドのエフェクト
-      effect: 'cube',    // スライドのエフェクト
+      slidesPerView:1.275,  // 1画面のスライド表示枚数
+      centeredSlides : false,  // アクティブなスライドの中央表示
       effect: 'slide',
-      autoplay: {
-        delay:1000,      // 指定時間おきに自動再生
-      },
+      // autoHeight: true,
+      // autoplay: {
+      //   delay:1000,      // 指定時間おきに自動再生
+      // },
 
       //ページネーション表示の設定
       pagination: { 
         el: '.swiper-pagination', //ページネーションの要素
         type: 'bullets', //ページネーションの種類
         clickable: true, //クリックに反応させる
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">'+'<svg class="" width="30" height="30" viewBox="0 0 30 30">'+
+              '<circle class="path" cx="15" cy="15" r="10" fill="none" transform="translate(-50%,-50%" stroke="#FFF"'+
+              'stroke-opacity="1" stroke-width="1px"></circle>'+
+              '<circle cx="15" cy="15" r="6" fill="#FFF"></circle>'+
+              '</svg></span>';
+        },
       },
 
       //ナビゲーションボタン（矢印）表示の設定
