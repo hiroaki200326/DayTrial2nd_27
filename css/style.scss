@@ -41,6 +41,7 @@ h2{
   letter-spacing: 0px;
   margin-bottom: 36px;
   font-weight: 600;
+  line-height: 37px;
 }
 
 h3{
@@ -321,34 +322,60 @@ $breakpoints: (
   margin-left: 3px;
 }
 
-.card-area{
-  background-color: #EFEFEF;
+.service-area{
+  background: linear-gradient(to bottom, $key_black 50%, $key_gray 50%);
+  padding-bottom: 60px;
+  .h2-title{
+    color: #fff;
+  }
+  .inner{
+    // margin-bottom: 60px;
+  }
 }
 
-.card-content{
+.service-content{
   display: flex;
   flex-direction: column;
-  // flex-wrap: wrap;
-  // max-width: 1200px;
-  // margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 0px 5px 12px rgba(62, 62, 62, 0.2);
 }
 
-.card-item{
-  padding: 16px 16px 0;
-  margin: 0 0 20px 0;
+.service-item{
+  padding: 0;
+  margin: 0;
   border-radius: 4px;
   background-color: #fff;
-  // max-width: 342px;
 
-  .box{
-    width: 310px;
-    height: 161px;
-    background-color: #DDDDDD;
+  img{
+    width: 50px;
+    height: auto;
     margin: 0 auto;
+    display: block;
+  }
+  h3{
+    margin-top: 28px;
+    text-align: center;
+    font: 600 18px/24px Montserrat;
+    letter-spacing: 3.6px;
+    margin-bottom: 0;
   }
   p{
-    margin-bottom: 33px;
+    text-align: left;
+    font: normal 14px/24px Yu Gothic;
+    letter-spacing: 0.01px;
+    margin-top: 24px;
+    margin-bottom: 0;
   }
+  &:nth-of-type(2){
+    margin: 65px 0;
+  }
+}
+
+.results-area{
+  background: $key_black;
 }
 
 .line{
@@ -948,6 +975,9 @@ form{
   right: -2px;
   top: 24px;
 }
+.drawer--right .drawer-nav{
+  right: -17.25rem;
+}
 
 .floating {  
   position: fixed;
@@ -1012,7 +1042,7 @@ form{
   //   width: auto;
   // }
 
-  .card-content{
+  .service-content{
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 1128px;
@@ -1020,7 +1050,7 @@ form{
     padding: 0 5px;
   }
   
-  .card-item{
+  .service-item{
     flex: 1;
     flex-basis: 342px;
     margin: 0 15px 20px 15px;
