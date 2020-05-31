@@ -332,73 +332,76 @@
   <section id="Access" class="access-area">
     <div class="inner">
       <h2 class="h2-title">Access</h2>
+      <div class="access-text">
+        <p>〒106-6126<br>東京都港区六本木 6丁目 10-1<br>六本木ヒルズ森タワー</p>
+      </div>
+      <div class="access-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7377910446403!2d139.6986059913564!3d35.68840714736546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2sjp!4v1588525325791!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <button type="button" onclick="location.href='#'" class="btn btn_black">Google Maps</button> 
     </div>
-    <div class="access-text">
-      <p>〒106-6126 東京都港区六本木 6丁目 10-1 六本木ヒルズ森タワー</p>
-    </div>
-    <div class="access-content">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7377910446403!2d139.6986059913564!3d35.68840714736546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2sjp!4v1588525325791!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <button type="button" onclick="location.href='#'" class="btn btn-inquiry">Google Maps</button> 
   </section>
   <!--access-->
 
   <!--contact-->
   <section id="Contact" class="contact-area">
     <div class="inner">
-      <h2 class="h2-title">Contact Us</h2>
-      <p>どこへ越しても住みにくいと悟った時、詩が生れ て、画が出来る。</p>
+      <div class="contact-text">
+        <h2 class="h2-title">Contact Us</h2>
+        <p>どこへ越しても住みにくいと悟った時、詩が生れ て、画が出来る。</p>
+        <div class="dark_filter"></div>
+      </div>
+      <div class="contact-content">
+        <form action="test.php" method="post">
+          <dl>
+            <div class="contact-item">
+              <dt>お問い合わせ種別</dt>
+              <dd>
+                <select class="form-select" name="userInquiryType">
+                  <option value="default" selected>選択してください</option>
+                  <option value="op1">option1</option>
+                  <option value="op2">option2</option>
+                  <option value="op3">option3</option>
+                </select>
+              </dd>
+            </div>
+            <div class="contact-item">
+              <dt class="form-mandatory">氏名</dt>
+              <dd><input class="form-text" type="text" name="userName" placeholder="氏名"></dd>
+            </div>
+            <div class="contact-item">
+              <dt class="form-mandatory">フリガナ</dt>
+              <dd><input class="form-text" type="text" name="userName" placeholder="フリガナ"></dd>
+            </div>
+            <div class="contact-item">
+              <dt class="form-mandatory">メールアドレス</dt>
+              <dd><input class="form-text" type="email" name="userEmail" placeholder="sample@gmail.com"></dd>
+            </div>
+            <div class="contact-item justify-content-left">
+              <dt class="">性別</dt>
+              <dd>
+                <label><input class="form-radio" type="radio" name="userRadio" value="radio1" checked><span>男性</span></label>
+                <label><input class="form-radio" type="radio" name="userRadio" value="radio2"><span>女性</span></label>
+              </dd>
+            </div>
+            <div class="contact-item margin-bottom-0">
+              <dt>メッセージ</dt>
+              <dd><textarea class="form-textarea" name="unserInquiryContents" placeholder=""></textarea></dd>
+            </div>
+            <div class="contact-item margin-bottom-0">
+              <dt class="width-0"></dt>
+              <dd><label class="txt-center-block"><input class="form-check" type="checkbox" name="userCheck" value="check1" checked><span><a href="#">個人情報保護方針</a></span>に同意する</label></dd>
+            </div>
+          </dl>
+          <div class="contact-submit">
+            <div class="contact-submit-wrap">
+              <input class="form-submit" type="submit" value="送信する">
+            </div>
+          </div>
+        </form> 
+      </div>
     </div>
-    <div class="contact-content">
-      <form action="test.php" method="post">
-        <dl>
-          <div class="contact-item">
-            <dt>お問い合わせ種別</dt>
-            <dd>
-              <select class="form-select" name="userInquiryType">
-                <option value="default" selected>選択してください</option>
-                <option value="op1">option1</option>
-                <option value="op2">option2</option>
-                <option value="op3">option3</option>
-              </select>
-            </dd>
-          </div>
-          <div class="contact-item">
-            <dt class="form-mandatory">氏名</dt>
-            <dd><input class="form-text" type="text" name="userName" placeholder="氏名"></dd>
-          </div>
-          <div class="contact-item">
-            <dt class="form-mandatory">フリガナ</dt>
-            <dd><input class="form-text" type="text" name="userName" placeholder="フリガナ"></dd>
-          </div>
-          <div class="contact-item">
-            <dt class="form-mandatory">メールアドレス</dt>
-            <dd><input class="form-text" type="email" name="userEmail" placeholder="sample@gmail.com"></dd>
-          </div>
-          <div class="contact-item justify-content-left">
-            <dt class="">性別</dt>
-            <dd>
-              <label><input class="form-radio" type="radio" name="userRadio" value="radio1" checked><span>男性</span></label>
-              <label><input class="form-radio" type="radio" name="userRadio" value="radio2"><span>女性</span></label>
-            </dd>
-          </div>
-          <div class="contact-item margin-bottom-0">
-            <dt>メッセージ</dt>
-            <dd><textarea class="form-textarea" name="unserInquiryContents" placeholder=""></textarea></dd>
-          </div>
-          <div class="contact-item margin-bottom-0">
-            <dt class="width-0"></dt>
-            <dd><label class="txt-center-block"><input class="form-check" type="checkbox" name="userCheck" value="check1" checked><span><a href="#">個人情報保護方針</a></span>に同意する</label></dd>
-          </div>
-        </dl>
-        <div class="contact-submit">
-          <div class="contact-submit-wrap">
-            <input class="form-submit" type="submit" value="送信する">
-          </div>
-        </div>
-      </form> 
-    </div>
-  </section>
+ </section>
   <!--contact-->
 
   <!--modal（プライバシーポリシー）-->
