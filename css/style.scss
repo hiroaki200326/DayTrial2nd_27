@@ -728,31 +728,34 @@ $breakpoints: (
 
 
 .access-area{
-  .line{
-    margin-bottom: 105px;
-  }
-  .btn-inquiry{
-    margin-top: 37.85px;
-    font-size: 20px;
-    width: 305px;
-    height: 56px;
-    padding: 16px 0 14px 59px;
+  background-color: $key_black;
+  color: $key_white;
+  padding-bottom: 40px;
+  .h2-title{
     text-align: left;
-    &:after{
-      position: relative;
-      content: "\f054";
-      font-family: 'Font Awesome 5 Free';
-      font-size: 20px;
-      color: #fff;
-      right: -32px;
-    }
+    margin-bottom: 0;
+  }
+}
+
+.access-text{
+  margin: 39px auto 0;
+  width: 100%;
+  p{
+    text-align: left;
+    font: normal 12px/24px Yu Gothic;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+  }
+  li{
+    display: flex;
+    flex-direction: row;
   }
 }
 
 .access-content{
   position: relative;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 70.6%;
   iframe{
     position: absolute;
     top: 0;
@@ -760,26 +763,7 @@ $breakpoints: (
     width: 100%;
     height: 100%;
   }
-  margin: 0 auto 42px;
-}
-
-.access-text{
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 40px;
-  p{
-    font-weight: normal;
-    margin-bottom: 15px;
-  }
-  p:nth-of-type(odd)
-  {
-    width: 5em;
-    margin-right: 38px;
-  }
-  li{
-    display: flex;
-    flex-direction: row;
-  }
+  margin: 19px auto 42px;
 }
 
 /* contact */
@@ -963,17 +947,66 @@ $breakpoints: (
 }
 
 .contact-area{
-  background-color: #EFEFEF;
+  background: url("../img/contact1.jpg") -101px 0px no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .inner{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding-top: 0;
+  }
+}
+.contact-text{
+  width: 100%;
+  background: url("../img/contact2.jpg") 0px -45px no-repeat;
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+  padding: 32px 16px 36px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  position: relative;
+  .h2-title{
+    color: $key_white;
+    font: 600 30px/23px Montserrat;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    z-index: 100;
+    position: relative;
+  }
+  p{
+    text-align: left;
+    font: normal 14px/26px Yu Gothic;
+    letter-spacing: 0px;
+    color: $key_white;
+    margin-top: 10px;
+    margin-bottom: 0;
+    z-index: 100;
+    position: relative;
+  }
+  .dark_filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+    border-radius: 12px 12px 0 0;
+  }
+}
+.contact-content{
+  padding: 40px 16px;
 }
 form{
-  width: 90%;
-  max-width: 800px;
+  // width: 90%;
+  // max-width: 800px;
   background-color: #fff;
-  margin: 0 auto;
-  padding: 20px 0;
+  // margin: 0 auto;
+  // padding: 20px 0;
   dl{
-    margin: 0 auto;
-    width: 90%;
+    // margin: 0 auto;
+    // width: 90%;
+    margin: 0;
   }
   dt{
     font-size: 18px;
