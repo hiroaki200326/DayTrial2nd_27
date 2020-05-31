@@ -786,7 +786,6 @@ img {
   appearance: none;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #3F51B5;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -807,7 +806,7 @@ img {
   appearance: none;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #3F51B5;
+  border: 1px solid #707070;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -815,7 +814,8 @@ img {
   height: 240px;
   padding: 0.4em 0.8em;
   width: 100%;
-  margin-bottom: 40.62px;
+  min-height: 160px;
+  resize: vertical;
 }
 
 .form-textarea:focus {
@@ -831,8 +831,7 @@ img {
 .form-radio + span {
   cursor: pointer;
   display: inline-block;
-  margin: 0 30px 0 0.2em;
-  padding: 0 0 0 39px;
+  padding: 0 0 0 27px;
   position: relative;
 }
 
@@ -843,33 +842,37 @@ img {
   border-radius: 50%;
   content: "";
   display: block;
-  height: 30px;
+  width: 12px;
+  height: 12px;
   left: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
 }
 
 .form-radio + span::after {
   -webkit-transform: translateY(-50%);
-  background: #3F51B5;
+  background: #3B69FF;
   border: 1px solid transparent;
   border-radius: 50%;
   content: "";
-  height: 18px;
-  left: 6px;
+  width: 6px;
+  height: 6px;
+  left: 3px;
   opacity: 0;
   padding: 2px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s ease 0s;
-  width: 18px;
 }
 
 .form-radio:checked + span::after {
   opacity: 1;
+}
+
+input[value="radio2"] ~ span {
+  margin-left: 95px;
 }
 
 .form-check {
@@ -880,8 +883,7 @@ img {
 .form-check + span {
   cursor: pointer;
   display: inline-block;
-  margin: 0 0.2em 0;
-  padding: 0 0 0 1.2em;
+  padding: 0 0 0 38px;
   position: relative;
 }
 
@@ -892,30 +894,29 @@ img {
   border-radius: 2px;
   content: "";
   display: block;
-  height: 30px;
-  left: -30px;
+  width: 18px;
+  height: 18px;
+  left: 0px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
 }
 
 .form-check + span::after {
   -webkit-transform: translateY(-50%) rotate(-45deg);
-  border-bottom: 3px solid #3F51B5;
-  border-left: 3px solid #3F51B5;
+  transform: translateY(-50%) rotate(-45deg);
+  border-bottom: 2px solid #3B69FF;
+  border-left: 2px solid #3B69FF;
   content: "";
   display: block;
-  height: 14px;
-  left: -25px;
+  left: 2px;
   margin-top: -0.2em;
   opacity: 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  top: 56%;
   transition: all 0.3s ease 0s;
-  width: 20px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+  width: 14px;
+  height: 7px;
 }
 
 .form-check:checked + span::after {
@@ -927,14 +928,15 @@ img {
   -webkit-appearance: none;
   appearance: none;
   background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px;
-  border: 1px solid #3F51B5;
+  border: 1px solid #707070;
   border-radius: 0;
   color: inherit;
   cursor: pointer;
-  font-family: inherit;
-  font-size: 1em;
-  padding: 0.4em 0.8em;
+  padding-left: 10px;
   width: 100%;
+  height: 32px;
+  font: 500 16px/23px Yu Gothic;
+  letter-spacing: 0px;
 }
 
 .form-select::-ms-expand {
@@ -949,20 +951,21 @@ img {
 
 .form-submit {
   -webkit-appearance: none;
-  background-color: #3F51B5;
-  background-image: none;
   border: none;
-  border-radius: 12px;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 22px;
-  font-weight: bold;
   margin: 0;
-  padding: 0.6em 2em;
+  margin-top: 20.5px;
   text-decoration: none;
-  width: 261px;
-  height: 56px;
+  width: 121px;
+  height: 50px;
+  background: #FFAA3B 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font: bold 18px/26px Yu Gothic;
+  letter-spacing: 0.45px;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .form-submit:hover,
@@ -1042,13 +1045,16 @@ form dl {
 }
 
 form dt {
-  font-size: 18px;
-  font-weight: bold;
+  font: 500 16px/23px Yu Gothic;
+  letter-spacing: 0px;
+  color: #3E3E3E;
   margin-bottom: 10px;
 }
 
 form dd {
   margin-left: 0;
+  font: normal 16px/23px;
+  letter-spacing: 0px;
 }
 
 form dt, form dd {
@@ -1060,45 +1066,48 @@ form input[type="text"], form input[type="email"], form select, form textarea {
   width: 100%;
 }
 
-form input[type="text"], form input[type="email"], form select {
-  height: 60px;
+form input[type="text"] {
+  height: 23.5px;
+  border: none;
+  border-bottom: 1px solid #3E3E3E;
+  opacity: 0.5;
+}
+
+form input[type="email"] {
+  height: 23.5px;
+  border: none;
+  border-bottom: 1px solid #3E3E3E;
+  opacity: 1;
 }
 
 .contact-item {
   display: block;
-  margin-bottom: 49px;
+  margin-top: 40px;
 }
 
 .contact-item a {
   text-decoration: underline #333333;
 }
 
+.contact-item:first-child {
+  margin-top: 0;
+}
+
+.contact-item:last-child {
+  font: 500 16px/23px Yu Gothic;
+  letter-spacing: 0px;
+  color: #3E3E3E;
+}
+
 .contact-submit {
   text-align: center;
   position: relative;
-  margin-bottom: 60px;
 }
 
 .contact-submit-wrap {
   width: 261px;
   margin: 0 auto;
   position: relative;
-}
-
-.contact-submit-wrap::after {
-  content: '';
-  width: .6em;
-  height: .6em;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 18.5px;
-  margin: auto;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .form-mandatory {
@@ -1111,15 +1120,15 @@ form input[type="text"], form input[type="email"], form select {
   content: "必須";
   font-size: 14px;
   color: #ffffff;
-  background-color: #E81919;
-  border-radius: 12px;
+  background: #FF4646 0% 0% no-repeat padding-box;
+  border-radius: 5px;
   text-align: center;
-  width: 45.98px;
-  line-height: 22.72px;
+  width: 50px;
+  line-height: 22px;
   display: inline-block;
   position: absolute;
   top: 50%;
-  right: -50px;
+  right: -70px;
   transform: translateY(-50%);
 }
 
