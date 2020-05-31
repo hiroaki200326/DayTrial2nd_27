@@ -94,6 +94,11 @@ img{
   font-weight: 700;
 }
 
+.h2-title{
+  font: 600 30px/37px Montserrat;
+  letter-spacing: 0px;
+}
+
 .btn{
   display: block;
   padding: 20px 35px;
@@ -633,8 +638,6 @@ $breakpoints: (
     padding: 40px 20px;
     .h2-title{
       text-align-last: left;
-      font: 600 30px/37px Montserrat;
-      letter-spacing: 0px;
     }
   }
 }
@@ -659,6 +662,70 @@ $breakpoints: (
     margin-top: 30px;
   }
 }
+.qa-area{
+  background: url("../img/qa.jpg") -862px 0px no-repeat;
+  background-size: 625%;
+  // background-attachment: fixed;
+  .inner{
+    padding-bottom: 10px;
+  }
+}
+.qa-item-list{
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 21.5px 18px 18px 18px;
+  margin-bottom: 30px;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3{
+    display: block;
+    text-align: left;
+    font: Bold 16px/26px Yu Gothic;
+    letter-spacing: 0.4px;
+    padding-left: 39px;
+    position: relative;
+    margin-bottom: 0;
+    &:before{
+      content: "Q";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      font: 600 16px/19px Montserrat;
+      letter-spacing: 0px;
+      color: $key_white;
+      background: #3B69FF 0% 0% no-repeat padding-box;
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      line-height: 26px;
+      border-radius: 50%;
+    }
+  }
+  img{
+    width: 15px;
+    height: 15px;
+    display: block;
+  }
+}
+.answer{
+  background: rgba(59, 105, 255, 0.2) 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  padding: 18px 14px;
+  margin-top: 21.5px;
+  display: none;
+  p{
+    margin: 0;
+    text-align: left;
+    font: 500 16px/26px Yu Gothic;
+    letter-spacing: 0px;
+  }
+}
+
 
 .access-area{
   .line{
@@ -1036,17 +1103,6 @@ form{
   height: 50px;
   padding-left: 20px;
   position: relative;
-  // &:after{
-  //   position: absolute;
-  //   content: "\f054";
-  //   font-family: 'Font Awesome 5 Free';
-  //   font-size: 16px;
-  //   color: rgb(51, 51, 51);
-  //   font-weight: 900;
-  //   top: 50%;
-  //   right: 21.5px;
-  //   transform: translateY(-50%);
-  // }
 }
 .drawer--right.drawer-open .drawer-hamburger{
   right: 319px;
