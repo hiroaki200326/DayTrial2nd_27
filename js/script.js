@@ -60,10 +60,12 @@ $(function(){
     //Open判定用クラス「open」の有無確認
     $answer.toggleClass('open');
     if($answer.hasClass('open')){
-      $(this).find('span').text("-");
+      $(this).find('img').attr('src', "../img/minus.png");
+      $(this).find('img').css('height', "3px");
     } 
     else{
-      $(this).find('span').text("+");
+      $(this).find('img').attr('src', "../img/plus.png");
+      $(this).find('img').css('height', "15px");
     }    
 
     // //Open判定用クラス「open」の有無確認
