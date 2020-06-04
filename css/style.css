@@ -1783,6 +1783,24 @@ form input[type="email"] {
     margin-top: 4px;
     margin-bottom: 16.5px;
   }
+  .service-area {
+    padding-top: 80px;
+    padding-bottom: 130px;
+    background: linear-gradient(to bottom, #3E3E3E 64%, #F3F3F3 36%);
+  }
+  .service-area .inner {
+    max-width: 960px;
+    width: 100%;
+    padding-top: 0;
+  }
+  .service-area .service-content {
+    padding: 54px 48px 56px;
+    justify-content: space-around;
+  }
+  .service-area .service-item {
+    max-width: 231px;
+    margin: 0;
+  }
   .price-content {
     flex-direction: row;
     justify-content: center;

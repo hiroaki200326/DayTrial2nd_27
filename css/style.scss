@@ -1712,6 +1712,25 @@ form{
     // }
   }
 
+  .service-area{
+    padding-top: 80px;
+    padding-bottom: 130px;
+    background: linear-gradient(to bottom, $key_black 64%, $key_gray 36%);
+    .inner{
+      max-width: 960px;
+      width: 100%;
+      padding-top: 0;
+    }
+    .service-content{
+      padding: 54px 48px 56px;
+      justify-content: space-around;
+    }
+    .service-item{
+      max-width: 231px;
+      margin: 0;
+    }
+  }
+
   .price-content{
     flex-direction: row;
     justify-content: center;
