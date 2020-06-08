@@ -1,3 +1,28 @@
+.test{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: block;
+  background-color: #FFAA3B;
+  padding: 20px;
+  .test2{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+  }
+  p{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    background-color: blue;
+    color: #ffffff;
+    top: 0;
+    left: 0;
+  }
+}
+
 /*共通*/
 $key_gray: #F3F3F3;
 $key_black: #3E3E3E;
@@ -7,6 +32,7 @@ $key_blue: #4973FF;
 $key_red: #FF4646;
 $Medium: 500;
 $Regular: normal;
+$SemiBold: 600;
 
 /*全体スタイル*/
 *,
@@ -1619,6 +1645,9 @@ form{
     .h2-title{
       margin-top: 0;
       margin-bottom: 0;
+      font: $SemiBold 36px/44px Montserrat;
+      letter-spacing: 0px;
+      color: #3E3E3E;
     }
     .news-content{
       margin-top: 60px;
@@ -1712,7 +1741,108 @@ form{
     // }
   }
 
+  .service-area{
+    padding-top: 80px;
+    padding-bottom: 130px;
+    background: linear-gradient(to bottom, $key_black 64%, $key_gray 36%);
+    .inner{
+      max-width: 960px;
+      width: 100%;
+      padding-top: 0;
+    }
+    .service-content{
+      padding: 54px 48px 56px;
+      justify-content: space-around;
+    }
+    .service-item{
+      max-width: 231px;
+      margin: 0;
+    }
+    .h2-title{
+      font: $SemiBold 36px/44px Montserrat;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      margin-bottom: 80px;
+    }
+  }
+
+  .results-area{
+    background: linear-gradient(to right, #F3F3F3 0% 7%, #3E3E3E 7% 93%);
+    padding-top: 80px;
+    padding-left: 203px;
+    .inner{
+      margin: 0;
+      max-width: 1163px;
+      padding: 0;
+      // margin-left: auto;
+    }
+    h2{
+      margin-left: 0;
+      margin-right: 0;
+      text-align-last: left;
+      font: $SemiBold 36px/44px Montserrat;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+    }
+    .swiper-container{
+      margin-top: 80px;
+      max-width: 1163px;
+      margin-left: auto;
+      padding: 0;
+    }
+    .swiper-wrapper{
+      height: 100%;
+    }
+    h3{
+      font: Bold 20px/24px Yu Gothic;
+      letter-spacing: 0.01px;
+      color: #3E3E3E;
+    }
+    .swiper-slide-text{
+      padding: 20px;
+    }
+    p{
+      font: $Regular 16px/24px Yu Gothic;
+      letter-spacing: 0.01px;
+      color: #3E3E3E;
+    }
+    .swiper-pagination{
+      text-align-last: left;
+      margin-top: 52px;
+    }
+    .results-item-more{
+      margin-top: 48px;
+    }
+  }
+
+  #Price{
+    th{
+      width: 288px;
+      font: $SemiBold 24px/29px Montserrat;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+    }
+    td{
+      width: 672px;
+      padding-left: 40px;
+    }
+  }
+  .price-area{
+    padding-top: 80px;
+    padding-bottom: 281px;
+    .inner{
+      padding-top: 0;
+      width: 100%;
+      max-width: 960px;
+    }
+    .h2-title{
+      font: $SemiBold 36px/44px Montserrat;
+      letter-spacing: 0px;
+      color: #3E3E3E;
+    }
+  }
   .price-content{
+    margin-top: 80px;
     flex-direction: row;
     justify-content: center;
   }
@@ -1724,6 +1854,13 @@ form{
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
+    p{
+      font: $Regular 12px/20px Yu Gothic;
+      letter-spacing: 0px;
+      color: #3E3E3E;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
   }
   .access-content{
     padding-top: 0;
