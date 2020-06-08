@@ -1929,6 +1929,61 @@ form input[type="email"] {
     margin-top: 24px;
     margin-bottom: 0;
   }
+  .comments-area {
+    background: linear-gradient(to right, #3E3E3E 71.7%, #F3F3F3 28.3%);
+  }
+  .comments-area .inner {
+    margin: 0;
+    bottom: 130px;
+    left: 93px;
+    width: 100%;
+    max-width: 644px;
+    padding: 80px 40px 120px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.161);
+  }
+  .comments-area .inner .h2-title {
+    font: 600 36px/44px Montserrat;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    margin: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+  }
+  .comments-area .inner .h2-title:after {
+    content: '';
+    width: 537px;
+    height: 450px;
+    background-color: red;
+    background: url("../img/comments3.png") 0px 0px no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -452px;
+    right: -934px;
+    display: inline-block;
+  }
+  .comments-area .comments-content {
+    margin: 0;
+    margin-top: 80px;
+  }
+  .comments-area .comments-content img {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+  }
+  .comments-area .comments-content .comments-item-list {
+    justify-content: start;
+  }
+  .comments-area .comments-content .comments-item-list:last-child {
+    margin-top: 76px;
+  }
+  .comments-area .comments-content p {
+    margin: 0;
+    width: 100%;
+    font: normal 16px/26px Yu Gothic;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+  }
   .access-content {
     padding-top: 0;
     width: 800px;
