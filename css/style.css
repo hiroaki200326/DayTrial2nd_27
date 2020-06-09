@@ -1861,7 +1861,7 @@ form input[type="email"] {
   .results-area .swiper-container {
     margin-top: 80px;
     max-width: 1163px;
-    margin-left: auto;
+    margin-left: 0;
     padding: 0;
   }
   .results-area .swiper-wrapper {
@@ -2400,4 +2400,44 @@ form input[type="email"] {
   .privacyPolicy-modal img:hover {
     opacity: 0.8;
   }
+}
+
+.news-item:hover {
+  background: rgba(59, 105, 255, 0.2) 0% 0% no-repeat padding-box;
+}
+
+.btn-inquiry:hover {
+  background-color: #fd8801;
+}
+
+.btn_white:hover {
+  background-color: #3E3E3E;
+  color: #ffffff;
+}
+
+.btn_black:hover {
+  background-color: #fff;
+  color: #3E3E3E;
+}
+
+.form-select:hover {
+  box-shadow: 0 0 5px #3f8de7;
+}
+
+.form-mouseover span:before {
+  box-shadow: 0 0 5px #3f8de7;
+}
+
+.form-mousedown span:before {
+  background-color: rgba(111, 166, 228, 0.726);
+}
+
+.form-text:hover, .form-text-inputmode {
+  border-bottom-color: #002df5 !important;
+  box-shadow: 0 3px 3px #3f8de7 !important;
+}
+
+.form-textarea:hover, .form-textarea-inputmode {
+  border-color: #002df5 !important;
+  box-shadow: 0 0 5px #3f8de7 !important;
 }
