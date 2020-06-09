@@ -1512,6 +1512,9 @@ form{
 
 //PCレイアウト用設定
 @include mq('pc') {
+  body{
+    background-color: #F3F3F3;
+  }
   .inner{
     max-width: $layout-width-pc-max;
   }
@@ -1919,14 +1922,51 @@ form{
       }
     }
   }
-
-  .access-content{
-    padding-top: 0;
-    width: 800px;
-    height: 400px;
+  .access-area{
+    margin-bottom: 206px;
+    padding: 0;
+    padding-top: 130px;
+    padding-left: 93px;
+    background: linear-gradient(to right, #3E3E3E 71.7%, #F3F3F3 28.3%);
+    padding-bottom: 178px;
+    .inner{
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      max-width: 720px;
+    }
+    .h2-title{
+      font: $SemiBold 36px/44px Montserrat;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+    }
+    .access-text{
+      margin-top: 40px;
+      p{
+        font: $Regular 16px/26px Yu Gothic UI;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+      }
+    }
+    button{
+      margin: 0;
+      margin-top: 40px;
+      max-width: 326px;
+      width: 100%;
+      padding: 0;
+      font: $SemiBold 20px/23px Montserrat;
+      letter-spacing: 2px;
+      color: #FFFFFF;
+    }
   }
-  .access-text{
-    width: 800px;
+  .access-content{
+    position: absolute;
+    width: 100%;
+    padding-top: 71.5%;
+    margin: 0;
+    top: 0;
+    left: 461px;
   }
 
   .contact-item{
