@@ -2189,6 +2189,56 @@ form input[type="email"] {
     letter-spacing: 0.45px;
     color: #FFFFFF;
   }
+  .footer-area {
+    padding: 0;
+    padding: 119.5px 93px;
+  }
+  .footer-content {
+    position: relative;
+  }
+  .footer-item-social {
+    width: 92px;
+    margin: 0;
+  }
+  .footer-item-links {
+    display: block;
+    margin: 0;
+    margin-top: 40px;
+  }
+  .footer-item-links a {
+    margin: 0;
+    font: 500 18px/26px Yu Gothic;
+    letter-spacing: 0.45px;
+    color: #FFFFFF;
+  }
+  .footer-item-links a:nth-of-type(2) {
+    margin: 20px 0;
+  }
+  .copyright {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    text-align: right;
+    max-width: 398px;
+  }
+  .copyright a {
+    font: 400 44px/77px;
+    letter-spacing: 0px;
+    color: #E3E3E3;
+  }
+  .copyright p {
+    max-width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 18px;
+    font: normal 12px/15px Montserrat;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+  }
+  .floating {
+    right: 90px;
+    bottom: 38.5px;
+  }
   .active-border-bottom {
     border-bottom-width: 2px;
     border-color: #E81919;
