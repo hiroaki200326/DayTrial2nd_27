@@ -103,4 +103,85 @@ $(function(){
     jQuery('.privacyPolicy-area').fadeIn();
   });
 
+  //ラジオボタン、チェックボックスのマウス連動
+  var $contactItemLabel = jQuery('.contact-item label');
+  $contactItemLabel.mouseover(function(){
+    //マウスオーバー
+    jQuery(this).addClass('form-mouseover');
+  });
+  $contactItemLabel.mouseout(function(){
+    //マウスオーバーから外れる
+    jQuery(this).removeClass('form-mouseover');
+  });
+  $contactItemLabel.mousedown(function(){
+    //クリック中
+    jQuery(this).removeClass('form-mouseover');
+    jQuery(this).addClass('form-mousedown');
+  });
+  $contactItemLabel.mouseup(function(){
+    //クリックボタンリリース
+    jQuery(this).removeClass('form-mousedown');
+  });
+
+  //テキストボックスの入力モード
+  var $formText = jQuery('.form-text');
+  $formText.focus(function(){
+    //テキスト入力モード
+    jQuery(this).addClass('form-text-inputmode');
+  });
+  $formText.blur(function(){
+    //テキスト入力モード解除
+    jQuery(this).removeClass('form-text-inputmode');
+  });
+  
+  //テキストエリアの入力モード
+  var $formTextarea = jQuery('.form-textarea');
+  $formTextarea.focus(function(){
+    //テキスト入力モード
+    jQuery(this).addClass('form-textarea-inputmode');
+  });
+  $formTextarea.blur(function(){
+    //テキスト入力モード解除
+    jQuery(this).removeClass('form-textarea-inputmode');
+  });
+
+  // swiper.js の初期化処理
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    spaceBetween: 24.5,
+    speed: 1000,
+    slidesPerView:1.5,  // 1画面のスライド表示枚数
+    centeredSlides : false,  // アクティブなスライドの中央表示
+    effect: 'slide',
+    // autoHeight: true,
+    // autoplay: {
+    //   delay:1000,      // 指定時間おきに自動再生
+    // },
+
+    //ページネーション表示の設定
+    pagination: { 
+      el: '.swiper-pagination', //ページネーションの要素
+      type: 'bullets', //ページネーションの種類
+      clickable: true, //クリックに反応させる
+      renderBullet: function (index, className) {
+          return '<span class="' + className + '">'+'<svg class="" width="30" height="30" viewBox="0 0 30 30">'+
+            '<circle class="path" cx="15" cy="15" r="10" fill="none" transform="translate(-50%,-50%" stroke="#FFF"'+
+            'stroke-opacity="1" stroke-width="1px"></circle>'+
+            '<circle cx="15" cy="15" r="6" fill="#FFF"></circle>'+
+            '</svg></span>';
+      },
+    },
+
+    //ナビゲーションボタン（矢印）表示の設定
+    navigation: { 
+      nextEl: '.swiper-button-next', //「次へボタン」要素の指定
+      prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+    },
+    breakpoints: {
+      768:{
+        slidesPerView: 2.6,
+      }
+    },
+  });
+
 });
